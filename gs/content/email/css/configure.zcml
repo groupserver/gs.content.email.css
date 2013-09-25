@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser">
+
+  <include package="zope.viewlet" file="meta.zcml" />
+
+  <browser:viewletManager
+    name="groupserver.emailStyle"
+    for="*"
+    provides=".interfaces.IHTMLEmailStyle"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/style.pt"
+    permission="zope2.Public" />
+  
+  <browser:viewlet
+    name="gs-content-email-css-bootstrap"
+    manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/bootstrap.pt"
+    title="Bootstrap CSS"
+    weight="10" 
+    permission="zope2.Public"/>
+  <browser:viewlet
+    name="gs-content-email-css-core"
+    manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/core.pt"
+    title="Core CSS"
+    weight="20" 
+    permission="zope2.Public"/>
+  <browser:viewlet
+    name="gs-content-email-css-layout"
+    manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/layout.pt"
+    title="Core CSS"
+    weight="30"
+    permission="zope2.Public" />
+
+</configure>
+

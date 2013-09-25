@@ -1,0 +1,5 @@
+<style type="text/css">
+  <tal:block repeat="viewlet option/viewlets">
+    <tal:block content="structure viewlet/render">CSS Content</tal:block>
+  </tal:block>
+</style>

@@ -1,0 +1,223 @@
+<tal:block>
+
+/* GroupServer CSS */
+/* <http://www.alistapart.com/articles/howtosizetextincss/> */
+
+.small {
+    font-size: 12px;
+    line-height: 1.667; /* 20px */
+}
+.small .dotted-inline-list .icon-alone {
+    height: 12px;
+}
+
+.muted pre, pre.muted {
+    color: #999999;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    line-height: 1;
+    text-overflow: ellipsis;
+}
+    /* If I use a code in a heading I want it to look like the heading .*/
+h1 cite, h2 cite, h3 cite, h4 cite {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+h1 code, h2 code, h3 code, h3 code, h4 code {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    border: inherit;
+    background: inherit;
+}
+
+h1 {
+    font-size: 187.5%; /* 1.5u */
+    line-height: 1.333; /* 2u */
+    margin: 0;
+}
+h2 {
+    font-size: 125%; /* 1u */
+    line-height: 1.5; /* 1.5u */
+    margin: 1em 0 0.5em 0; /* 1u 0 0.5u 0 */
+}
+h3, h4 {
+    font-size: 100%;
+    line-height: 1.25; /* 1u */
+}
+h3 {
+    padding: 0 0 0.438em 0; /* 0.5u - medium */
+    border-bottom: 0.188em solid #666666;
+}
+/* Only h3 and h4 headings make sense at small sizes*/
+h3.small, .small h3 {
+    line-height: 1; /* 12px */
+    padding: 0 0 0.417em 0; /* 5px @ 12px */
+    border-bottom: 0.25em solid #666666;
+}
+
+
+abbr, abbr[title], abbr[data-original-title]{
+    text-decoration: none;
+    border: none;
+}
+abbr.initialism {
+    text-transform: lowercase;
+    font-size: inherit;
+    font-variant: small-caps;
+}
+
+code, pre {
+    border: none;
+    padding: 0;
+    color: inherit;
+    background: none;
+    font-weight: 500; /* --mpj17=-- Or maybe 600. I am unsure*/
+    font-size: inherit;
+}
+
+/* Fixes for the Wells */
+.well {
+    padding: 0.562em; /* 0.5u - thin */
+    border-width: 0.063em;
+}
+.small .well, .well.small {
+    padding: 0.75em; /* 0.5u@12px - thin */
+    border-width: 0.083em;
+}
+
+.well > :first-child, .well > :first-child > :first-child {
+    margin-top: 0;
+}
+.well > :last-child, .well > :last-child > :last-child {
+    margin-bottom: 0;
+}
+
+p, ul, ol, dl, fieldset, table, pre {
+    margin: 1.250em 0; /* 1u */
+}
+p.small, ul.small, ol.small, dl.small, fieldset.small, table.small, pre.small {
+    margin: 1.667em 0; /* 1u @ 12px */
+}
+ul ul.small, ul ol.small, ol.small, ol.small {
+    margin-top: 0;
+}
+
+h2 + :not(div), h3 + :not(div), h4 + :not(div), h5 + :not(div), h6 + :not(div), h2 + div :not(div), h3 + div :not(div), h4 + div :not(div), h5 + div :not(div), h6 + div :not(div) {
+    margin-top: 0;
+}
+
+h3 {
+    /* 13px line*/ 
+    padding: 0 0 0.154em 0; /* + 2px padding = 15px */
+    border-bottom: 0.188em solid #666666; /* + 3px border = 18px = 1u */
+}
+
+cite, em {
+  font-style: italic;
+}
+
+blockquote {
+    border-left: 0.375em solid #666666;
+    padding-left: 0.250em;
+    margin-left: 0;
+}
+blockquote p {
+    font-size: inherit;
+}
+
+/* Less important information is grey */
+.muted em, .muted strong {
+  font-style: normal;
+  color: #333333;
+}
+
+/* Text: Lists */
+ul, ol {
+  margin-left: 1.875em; /*1.5u*/
+}
+ul ol li {
+  list-style:decimal outside;}
+
+
+ol ol li {
+  list-style:lower-alpha outside;
+}
+ol ol ol li {
+  list-style:lower-roman outside;
+}
+/* Remove the top and bottom margins for nested lists. */
+ul ul, ul ol, ol ol, ol ul, ul ul.small, ul ol.small, ol ol.small, ol ul.small {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: 1.250em 0 0 0;
+}
+dl dd {
+  margin-left: 1.250em;
+}
+
+/* Text: Tables */
+td, th {
+  padding: 0.625em; /*0.5u*/
+  border: none;
+}
+/*TODO: Captions */
+tbody th {
+  /* Headings in the thead are centered (see Y!UI, above). */
+  text-align: left;
+}
+
+pre {
+    font-size: 16px;
+    background: none;
+}
+
+
+/* Text Markup: Inline Lists. Usually used for navigating between pages */
+.inline-list, .dotted-inline-list, .comma-inline-list {
+    margin-left: 0;
+}
+.inline-list li, .dotted-inline-list li, .comma-inline-list li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top; /* For Webkit */
+}
+.inline-list li {
+    margin-right: 0.625em; /* 0.5u */
+}
+.small .inline-list li,
+.inline-list.small li,
+.inline-list li.small {
+    margin-right: 0.833em; /* 0.5u */
+}
+
+.dotted-inline-list li:before {
+    content: "\2022";
+    color: #999999;
+    padding: 0 0.0.188em; /* medium */
+}
+.small .dotted-inline-list li:before, 
+.dotted-inline-list.small li:before, 
+.dotted-inline-list li.small:before {
+   padding: 0 0;
+}
+
+.dotted-inline-list li:first-child:before {
+    content: none;
+}
+.comma-inline-list li:after {
+    content: ", ";
+    color: #999999;
+}
+.comma-inline-list li:last-child:after {
+    content: none;
+}
+
+</tal:block>
