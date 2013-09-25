@@ -45,6 +45,7 @@ setup(name='gs.content.email.css',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'zope.tal',
         'zope.viewlet',
     ],
     entry_points="""
