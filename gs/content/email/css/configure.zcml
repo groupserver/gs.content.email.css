@@ -6,15 +6,14 @@
 
   <browser:viewletManager
     name="groupserver.emailStyle"
-    for="*"
     provides=".interfaces.IHTMLEmailStyle"
     class="gs.viewlet.manager.WeightOrderedViewletManager"
     template="browser/templates/style.pt"
-    permission="zope2.Public" />
+    permission="zope2.View" />
   
   <browser:viewlet
     name="gs-content-email-css-bootstrap"
-    manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
+    manager=".interfaces.IHTMLEmailStyle"
     class="gs.viewlet.SiteViewlet"
     template="browser/templates/bootstrap.pt"
     title="Bootstrap CSS"
@@ -22,7 +21,7 @@
     permission="zope2.Public"/>
   <browser:viewlet
     name="gs-content-email-css-core"
-    manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
+    manager=".interfaces.IHTMLEmailStyle"
     class="gs.viewlet.SiteViewlet"
     template="browser/templates/core.pt"
     title="Core CSS"
@@ -30,7 +29,7 @@
     permission="zope2.Public"/>
   <browser:viewlet
     name="gs-content-email-css-layout"
-    manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
+    manager=".interfaces.IHTMLEmailStyle"
     class="gs.viewlet.SiteViewlet"
     template="browser/templates/layout.pt"
     title="Core CSS"
