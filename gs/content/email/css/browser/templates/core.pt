@@ -1,6 +1,42 @@
 <tal:block>
-
 /* GroupServer CSS */
+
+[data-icon]:before, [data-icon-after]:after {
+    font-family: 'gs-icons';
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+[data-icon]:before {
+    content: attr(data-icon) " ";
+}
+[data-icon-after]:after {
+    content: " " attr(data-icon-after);
+ }
+/* Taken from CSS Tricks <http://css-tricks.com/html-for-icon-font-usage/> */
+.icon-alone {
+  display: inline-block; /* Fix for clickability issue in WebKit */
+  /* Resolve a disagreement with the Bootstrap icons */
+  height: auto;
+  width: auto;
+  vertical-align: inherit;
+  margin: 0;
+  line-height: inherit;
+  
+}
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+a, a:hover, a:focus, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* <http://www.alistapart.com/articles/howtosizetextincss/> */
 
 .small {
