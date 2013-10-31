@@ -1,6 +1,0 @@
-<style type="text/css" xmlns:tal="http://xml.zope.org/namespaces/tal"
-       data-premailer="ignore">
-  <tal:block  repeat="viewlet options/viewlets">
-    <tal:block content="structure viewlet/render">Viewlet Content</tal:block>
-  </tal:block>
-</style>
