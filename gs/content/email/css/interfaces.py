@@ -17,3 +17,9 @@ from zope.viewlet.interfaces import IViewletManager
 
 class IHTMLEmailStyle(IViewletManager):
     '''A viewlet manager for the CSS in an HTML-formatted email notification'''
+
+
+class IHTMLOpenEmailStyle(IViewletManager):
+    '''A viewlet manager for the CSS in an HTML-formatted email notification.
+    Used when the CSS is not turned into style-attributes (may be ignored by
+    developers and clients).'''
