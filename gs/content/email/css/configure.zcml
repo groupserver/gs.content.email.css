@@ -44,4 +44,12 @@
     template="browser/templates/style.pt"
     permission="zope2.View" />
 
+  <!--The page that allows one to preview the CSS-->
+  <browser:page
+    name="gs-content-email-css.css"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    class=".page.CSSPreviewPage"
+    template="browser/templates/preview.pt"
+    permission="zope2.Public" />
+
 </configure>
