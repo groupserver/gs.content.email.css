@@ -7,11 +7,14 @@ CSS for HTML-formatted email notifications in GroupServer
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-09-25
+:Date: 2014-01-08
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
-  `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
+  `Creative Commons Attribution-Share Alike 4.0 International License`_
   by `OnlineGroups.Net`_.
+
+.. _Creative Commons Attribution-Share Alike 4.0 International License:
+    http://creativecommons.org/licenses/by-sa/4.0/
 
 Introduction
 ============
@@ -65,7 +68,7 @@ The `Twitter Bootstrap`_ CSS is licensed under the `Apache License, Version
 Resources
 =========
 
-- Code repository: https://source.iopen.net/groupserver/gs.content.email.css/
+- Code repository: https://github.com/groupserver/gs.content.email.css/
 - Questions and comments to http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
@@ -73,14 +76,12 @@ Resources
 .. _GroupServer.org: http://groupserver.org/
 .. _OnlineGroups.Net: https://onlinegroups.net/
 .. _Michael JasonSmith: http://groupserver.org/p/mpj17/
-.. _Creative Commons Attribution-Share Alike 3.0 New Zealand License:
-   http://creativecommons.org/licenses/by-sa/3.0/nz/
 .. _Twitter Bootstrap: http://twitter.github.com/bootstrap/
 .. _Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
 
-.. [#base] See <https://source.iopen.net/groupserver/gs.content.email.base/>
-.. [#notify] See  <https://source.iopen.net/groupserver/gs.profile.notify/>
-.. [#css] See <https://source.iopen.net/groupserver/gs.content.css/>
+.. [#base] See <https://github.com/groupserver/gs.content.email.base/>
+.. [#notify] See  <https://github.com/groupserver/gs.profile.notify/>
+.. [#css] See <https://github.com/groupserver/gs.content.css/>
 
 ..  LocalWords:  SiteEmail SitePage GroupEmail sitePage groupPage html CSS
 ..  LocalWords:  premailer IGSSiteFolder siteInfo groupserver viewlets css
