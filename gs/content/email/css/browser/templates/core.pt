@@ -1,4 +1,4 @@
-<tal:block>
+<tal:block xmlns:tal="http://xml.zope.org/namespaces/tal">
 /* GroupServer CSS */
 
 [data-icon]:before, [data-icon-after]:after {

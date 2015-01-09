@@ -1,1 +1,2 @@
-<tal:block content="provider:groupserver.emailStyle">This content</tal:block>
+<tal:block xmlns:tal="http://xml.zope.org/namespaces/tal"
+           content="provider:groupserver.emailStyle">This content</tal:block>
