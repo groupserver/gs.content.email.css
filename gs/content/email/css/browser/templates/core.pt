@@ -16,7 +16,7 @@
 [data-icon-after]:after {
     content: " " attr(data-icon-after);
  }
-/* Taken from CSS Tricks <http://css-tricks.com/html-for-icon-font-usage/> */
+/* Taken from CSS Tricks http://css-tricks.com/html-for-icon-font-usage/ */
 .icon-alone {
   display: inline-block; /* Fix for clickability issue in WebKit */
   /* Resolve a disagreement with the Bootstrap icons */
@@ -41,7 +41,7 @@ ul a, ul a:hover, ul a:focus, ul a:visited {
     text-decoration: underline;
 }
 
-/* <http://www.alistapart.com/articles/howtosizetextincss/> */
+/* http://www.alistapart.com/articles/howtosizetextincss/ */
 
 .small {
     font-size: 12px;
