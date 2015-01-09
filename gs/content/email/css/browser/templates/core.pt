@@ -25,7 +25,6 @@
   vertical-align: inherit;
   margin: 0;
   line-height: inherit;
-  
 }
 .screen-reader-text { /* Reusable, toolbox kind of class */
   position: absolute;
@@ -152,7 +151,7 @@ h2 + :not(div), h3 + :not(div), h4 + :not(div), h5 + :not(div), h6 + :not(div), 
 }
 
 h3 {
-    /* 13px line*/ 
+    /* 13px line*/
     padding: 0 0 0.154em 0; /* + 2px padding = 15px */
     border-bottom: 0.188em solid #666666; /* + 3px border = 18px = 1u */
 }
@@ -244,8 +243,8 @@ pre {
     color: #999999;
     padding: 0 0.0.188em; /* medium */
 }
-.small .dotted-inline-list li:before, 
-.dotted-inline-list.small li:before, 
+.small .dotted-inline-list li:before,
+.dotted-inline-list.small li:before,
 .dotted-inline-list li.small:before {
    padding: 0 0;
 }
