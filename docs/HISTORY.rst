@@ -1,12 +1,15 @@
 Changelog
 =========
 
-2.0.3 (2015-01-08)
+2.0.3 (2015-01-09)
 ------------------
 
 * Pointing the ``setup.py`` and ``README.rst`` at GitHub_
+* Fixing some XML issues with the CSS viewlets. Thanks to Shayne
+  Smith for `pointing those out.`_
 
 .. _GitHub: https://github.com/groupserver/gs.content.email.css/
+.. _pointing those out: http://groupserver.org/r/post/2NSogtNlD1KlMrJs6JOuTD
 
 2.0.2 (2014-09-17)
 ------------------
