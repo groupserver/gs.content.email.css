@@ -259,4 +259,7 @@ pre {
 .comma-inline-list li:last-child:after {
     content: none;
 }
+a.btn {
+    text-decoration: none;
+}
 </tal:block>
