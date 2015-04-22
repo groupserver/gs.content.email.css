@@ -1,5 +1,10 @@
 <tal:block xmlns:tal="http://xml.zope.org/namespaces/tal">
 /* GroupServer Page Layout */
+body {
+    /* For the phones */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 #gs-content-email-layout-prebody {
     border-bottom: thin solid black;
 }
