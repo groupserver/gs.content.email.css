@@ -7,7 +7,7 @@
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
+    line-height: 20px; /* 1 */
     -webkit-font-smoothing: antialiased;
 }
 [data-icon]:before {
@@ -57,7 +57,6 @@ ul a, ul a:hover, ul a:focus, ul a:visited {
 
 /* Headings */
 h1, h2, h3, h4 {
-    line-height: 1;
     text-overflow: ellipsis;
 }
     /* If I use a code in a heading I want it to look like the heading .*/
