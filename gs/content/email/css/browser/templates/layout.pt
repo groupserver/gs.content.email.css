@@ -3,7 +3,13 @@
 #gs-content-email-layout-prebody {
     border-bottom: thin solid black;
 }
-
+#gs-content-email-layout-body {
+    table-layout: fixed; /* Bug-fix for Yahoo! Mail */
+}
+#gs-content-email-layout-body, #gs-content-email-layout-body table {
+    padding: 0 0 0 0; /*--=mpj17=-- Deliberately putting all 4 sides */
+    margin: 0 0 0 0;
+}
 #toparea {
     background: #eeeeee;
     height: 5.250em; /*4.5u - thick*/
