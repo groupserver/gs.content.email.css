@@ -13,6 +13,8 @@
 #toparea {
     background: #eeeeee;
     height: 5.250em; /*4.5u - thick*/
+}
+#titlebar {
     border-bottom: 0.375em solid #cccccc;
 }
 #toparea a {
@@ -36,19 +38,21 @@
 #titlebar-home-link {
     display: block;
     border: none;
-    padding-top: 1.25em; /* 1u */
     text-decoration: none;
 }
 #titlebar .logo {
     display: none;
 }
 #titlebar .site {
-    font: bold 250%/1 "Helvetica Neue", Helvetica, Arial, sans-serif; /* 2u */
-    margin-left: 0.25em; /* 0.5u */
+    font-size: 40px; /* 2u */
+    line-height: 40px; /* 1 */
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 10px; /* 0.25em = 0.5u */
 }
 
 #gs-content-layout-body {
-    padding: 0 0 1.25em 0;
+    padding: 0 0 20px 0; /* 1u = 1.25em */
 }
 
 #bodyblock {
@@ -56,14 +60,14 @@
 }
 
 #gs-content-email-layout-prebody, #bodyblock, #gs-content-layout-footer {
-    padding: 0 0.625em; /* 0 0.5u 0 0.5u  */
+    padding: 0 10px 0 10px; /* 0 0.625em = 0.5u  */
 }
 
 /* The Footer */
 #gs-content-layout-footer {
     background: #eeeeee;
-    height: 5.250em; /*4.5u - thick*/
-    border-top: 0.375em solid #cccccc;
+    height: 84px; /* 5.250em = 4.5u - thick*/
+    border-top: 6px solid #cccccc;  /* 0.375em */
     position: relative;
     clear: both;
     margin: 0;

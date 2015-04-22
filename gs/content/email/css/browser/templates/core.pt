@@ -45,7 +45,7 @@ ul a, ul a:hover, ul a:focus, ul a:visited {
 
 .small {
     font-size: 12px;
-    line-height: 1.667; /* 20px */
+    line-height: 20px; /* 1.667 */
 }
 .small .dotted-inline-list .icon-alone {
     height: 12px;
@@ -75,28 +75,28 @@ h1 code, h2 code, h3 code, h3 code, h4 code {
 }
 
 h1 {
-    font-size: 187.5%; /* 1.5u */
-    line-height: 1.333; /* 2u */
+    font-size: 30px; /* 1.5u */
+    line-height: 40px; /* 2u */
     margin: 0;
 }
 h2 {
-    font-size: 125%; /* 1u */
-    line-height: 1.5; /* 1.5u */
-    margin: 1em 0 0.5em 0; /* 1u 0 0.5u 0 */
+    font-size: 20px; /* 1u */
+    line-height: 30px; /* 1.5u */
+    margin: 20px 0 10px 0; /* 1u 0 0.5u 0 */
 }
 h3, h4 {
-    font-size: 100%;
-    line-height: 1.25; /* 1u */
+    font-size: 20px;  /* 1u */
+    line-height: 20px; /* 1u */
 }
 h3 {
-    padding: 0 0 0.438em 0; /* 0.5u - medium */
-    border-bottom: 0.188em solid #666666;
+    padding: 0 0 7px 0; /* 0.5u - medium */
+    border-bottom: 3px solid #666666;
 }
 /* Only h3 and h4 headings make sense at small sizes*/
 h3.small, .small h3 {
-    line-height: 1; /* 12px */
-    padding: 0 0 0.417em 0; /* 5px @ 12px */
-    border-bottom: 0.25em solid #666666;
+    line-height: 12px; /* 1 */
+    padding: 0 0 5px 0; /* 5px @ 12px */
+    border-bottom: 3px solid #666666;  /* 0.25em */
 }
 
 
@@ -121,12 +121,12 @@ code, pre {
 
 /* Fixes for the Wells */
 .well {
-    padding: 0.562em; /* 0.5u - thin */
-    border-width: 0.063em;
+    padding: 9px; /* 0.5u - thin */
+    border-width: 1px;
 }
 .small .well, .well.small {
-    padding: 0.75em; /* 0.5u@12px - thin */
-    border-width: 0.083em;
+    padding: 9px; /* 0.5u@12px - thin */
+    border-width: 1px; /* 0.083em */
 }
 
 .well > :first-child, .well > :first-child > :first-child {
@@ -137,10 +137,10 @@ code, pre {
 }
 
 p, ul, ol, dl, fieldset, table, pre {
-    margin: 1.250em 0; /* 1u */
+    margin: 10px 0 10px 0; /* 1u */
 }
 p.small, ul.small, ol.small, dl.small, fieldset.small, table.small, pre.small {
-    margin: 1.667em 0; /* 1u @ 12px */
+    margin: 10px 0 10px 0; /* 1u @ 12px */
 }
 ul ul.small, ul ol.small, ol.small, ol.small {
     margin-top: 0;
@@ -152,8 +152,8 @@ h2 + :not(div), h3 + :not(div), h4 + :not(div), h5 + :not(div), h6 + :not(div), 
 
 h3 {
     /* 13px line*/
-    padding: 0 0 0.154em 0; /* + 2px padding = 15px */
-    border-bottom: 0.188em solid #666666; /* + 3px border = 18px = 1u */
+    padding: 0 0 17px 0; /* + 2px padding = 0.154em */
+    border-bottom: 3px solid #666666; /* + 3px border = 18px = 1u */
 }
 
 cite, em {
@@ -161,8 +161,8 @@ cite, em {
 }
 
 blockquote {
-    border-left: 0.375em solid #666666;
-    padding-left: 0.250em;
+    border-left: 6px solid #666666; /* 0.375em */
+    padding-left: 4px; /* 0.250em */
     margin-left: 0;
 }
 blockquote p {
@@ -177,11 +177,11 @@ blockquote p {
 
 /* Text: Lists */
 ul, ol {
-  margin-left: 1.875em; /*1.5u*/
+  margin-left: 15px; /*1.5u*/
 }
 ul ol li {
-  list-style:decimal outside;}
-
+  list-style:decimal outside;
+}
 
 ol ol li {
   list-style:lower-alpha outside;
@@ -191,28 +191,28 @@ ol ol ol li {
 }
 /* Remove the top and bottom margins for nested lists. */
 ul ul, ul ol, ol ol, ol ul, ul ul.small, ul ol.small, ol ol.small, ol ul.small {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0 0 0 0;
+    margin-bottom: 0 0 0 0;
 }
 
 dt {
-  font-weight: bold;
-  margin: 1.250em 0 0 0;
+    font-weight: bold;
+    margin: 2px 0 0 0; /* 1u = 1.250em  */
 }
 dl dd {
-  margin-left: 1.250em;
+  margin-left: 20px; /* 1u = 1.250em */
 }
 
 /* Text: Tables */
-td, th {
-  padding: 0.625em; /*0.5u*/
-  border: none;
-}
-/*TODO: Captions */
-tbody th {
-  /* Headings in the thead are centered (see Y!UI, above). */
-  text-align: left;
-}
+/* td, th { */
+/*   padding: 10px; /\* 0.625em = 0.5u*\/ */
+/*   border: none; */
+/* } */
+/* /\*TODO: Captions *\/ */
+/* tbody th { */
+/*   /\* Headings in the thead are centered (see Y!UI, above). *\/ */
+/*   text-align: left; */
+/* } */
 
 pre {
     font-size: 16px;
@@ -230,23 +230,23 @@ pre {
     vertical-align: top; /* For Webkit */
 }
 .inline-list li {
-    margin-right: 0.625em; /* 0.5u */
+    margin-right: 10px; /* 0.625em = 0.5u */
 }
 .small .inline-list li,
 .inline-list.small li,
 .inline-list li.small {
-    margin-right: 0.833em; /* 0.5u */
+    margin-right: 10px; /* 0.833em = 0.5u */
 }
 
 .dotted-inline-list li:before {
     content: "\2022";
     color: #999999;
-    padding: 0 0.0.188em; /* medium */
+    padding: 0 3px 0 3px; /* medium */
 }
 .small .dotted-inline-list li:before,
 .dotted-inline-list.small li:before,
 .dotted-inline-list li.small:before {
-   padding: 0 0;
+   padding: 0 0 0 0;
 }
 
 .dotted-inline-list li:first-child:before {
@@ -259,5 +259,4 @@ pre {
 .comma-inline-list li:last-child:after {
     content: none;
 }
-
 </tal:block>
