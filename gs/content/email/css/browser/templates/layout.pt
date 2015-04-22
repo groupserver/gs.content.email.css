@@ -12,10 +12,10 @@
 }
 #toparea {
     background: #eeeeee;
-    height: 5.250em; /*4.5u - thick*/
+    height: 84px; /*4.5u - thick*/
 }
-#titlebar {
-    border-bottom: 0.375em solid #cccccc;
+#toparea {
+    border-bottom: 6px solid #cccccc; /* 0.375em = thick */
 }
 #toparea a {
     text-decoration: none;
