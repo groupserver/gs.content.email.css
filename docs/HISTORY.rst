@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.1.0 (2015-04-23)
+------------------
+
+* Switching to a table-based layout
+* Switching from relative-units to pixels
+
 2.0.3 (2015-01-09)
 ------------------
 
