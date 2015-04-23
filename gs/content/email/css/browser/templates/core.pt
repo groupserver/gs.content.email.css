@@ -1,6 +1,5 @@
 <tal:block xmlns:tal="http://xml.zope.org/namespaces/tal">
 /* GroupServer CSS */
-
 [data-icon]:before, [data-icon-after]:after {
     font-family: 'gs-icons';
     speak: none;
@@ -218,7 +217,6 @@ pre {
     background: none;
 }
 
-
 /* Text Markup: Inline Lists. Usually used for navigating between pages */
 .inline-list, .dotted-inline-list, .comma-inline-list {
     margin-left: 0;
@@ -260,5 +258,11 @@ pre {
 }
 a.btn {
     text-decoration: none;
+}
+
+hr {
+  border-top-width: 3px;
+  padding: 0 0 0 0; /* Delibarately using margin, not padding */
+  margin: 17px 0 19px 0; /* 1u 0, minus the border widths */
 }
 </tal:block>
