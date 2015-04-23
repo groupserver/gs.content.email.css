@@ -43,6 +43,14 @@
     class="gs.viewlet.manager.WeightOrderedViewletManager"
     template="browser/templates/style.pt"
     permission="zope2.View" />
+  <browser:viewlet
+    name="gs-content-email-css-media"
+    manager=".interfaces.IHTMLOpenEmailStyle"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/media.pt"
+    title="Media-queries CSS"
+    weight="10"
+    permission="zope2.Public" />
 
   <!--The page that allows one to preview the CSS-->
   <browser:page
