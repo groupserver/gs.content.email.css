@@ -1,8 +1,16 @@
 <tal:block xmlns:tal="http://xml.zope.org/namespaces/tal">
 /* A hack for Apple Mail */
 @media screen and (min-width: 601px) {
+    table[class="fluid-table"] {
+        width: 600px !important;
+    }
     #gs-content-email-layout-fluid-body p {
         width: 600px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    #titlebar .site {
+        font-size: 30px;
     }
 }
 </tal:block>

@@ -5,6 +5,12 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+#gs-content-email-layout {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    border: none;
+    border-collapse: collapse;
+}
 #gs-content-email-layout-preheader {
     /* https://www.campaignmonitor.com/blog/post/3628/a-practical-guide-to-email-preheaders/ */
     display: none;
@@ -24,12 +30,10 @@ body {
 #toparea {
     background: #eeeeee;
     height: 84px; /*4.5u - thick*/
+    border-bottom: 6px solid #cccccc; /* 0.375em = thick */
 }
 #toparea a {
     text-decoration: none;
-}
-#titlebar {
-    border-bottom: 6px solid #cccccc; /* 0.375em = thick */
 }
 #gs-content-layout-body {
     position: relative;
@@ -50,6 +54,10 @@ body {
     display: block;
     border: none;
     text-decoration: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #titlebar .logo {
     display: none;
@@ -59,7 +67,6 @@ body {
     line-height: 40px; /* 1 */
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-left: 10px; /* 0.25em = 0.5u */
 }
 
 #gs-content-layout-body {
