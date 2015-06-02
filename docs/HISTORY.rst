@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.1.1 (2015-06-02)
+------------------
+
+* Following the changes to ``gs.content.email.layout``
+
 2.1.0 (2015-04-23)
 ------------------
 
