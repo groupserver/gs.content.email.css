@@ -1,10 +1,10 @@
 Changelog
 =========
 
-2.2.0 (2015-07-27)
+2.1.2 (2015-07-27)
 ------------------
 
-* Allowing sites to set skins for email
+* Switching to Unicode literals
 
 2.1.1 (2015-06-02)
 ------------------

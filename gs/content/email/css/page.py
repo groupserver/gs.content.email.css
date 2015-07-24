@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-# Copyright © 2014 OnlineGroups.net and Contributors.
+# Copyright © 2014, 2015 OnlineGroups.net and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -12,6 +12,7 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
+from __future__ import absolute_import, unicode_literals, print_function
 from Products.Five import BrowserView
 from gs.core import to_ascii
 
@@ -21,5 +22,4 @@ class CSSPreviewPage(BrowserView):
         super(CSSPreviewPage, self).__init__(context, request)
 
         response = self.request.response
-        ctype = 'text/css; charset=utf-8'
-        response.setHeader(to_ascii("Content-Type"), to_ascii(ctype))
+        response.setHeader(b"Content-Type", b'text/css; charset=utf-8')
