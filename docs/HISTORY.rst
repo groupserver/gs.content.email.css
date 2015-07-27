@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 * Switching to Unicode literals
+* Preventing the site-title from wrapping (setting ``text-overflow``)
 
 2.1.1 (2015-06-02)
 ------------------
@@ -48,3 +49,5 @@ Changelog
 
 Initial version. Email notifications prior to this product had
 the CSS hard-coded into the HTML.
+
+..  LocalWords:  Changelog
