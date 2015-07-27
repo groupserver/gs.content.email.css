@@ -52,13 +52,16 @@ body {
 
 #titlebar-home-link {
     display: block;
+    line-height: 40px; /* 2u */
+    width: 600px;
     border: none;
-    text-decoration: none;
     overflow-x: hidden;
     overflow-y: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    text-decoration: none;
 }
+
 #titlebar .logo {
     display: none;
 }
