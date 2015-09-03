@@ -5,6 +5,10 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+td {
+    padding: 0;
+    margin: 0;
+}
 #gs-content-email-layout {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -22,6 +26,7 @@ body {
 #gs-content-email-layout-body {
     table-layout: fixed; /* Bug-fix for Yahoo! Mail */
     border-collapse: separate;
+
 }
 #gs-content-email-layout-body, #gs-content-email-layout-body table {
     padding: 0 0 0 0; /*--=mpj17=-- Deliberately putting all 4 sides */
@@ -29,7 +34,7 @@ body {
 }
 #toparea {
     background: #eeeeee;
-    height: 84px; /*4.5u - thick*/
+    height: 24px; /*4.5u - thick*/
     border-bottom: 6px solid #cccccc; /* 0.375em = thick */
 }
 #toparea a {
@@ -52,12 +57,9 @@ body {
 
 #titlebar-home-link {
     display: block;
-    line-height: 40px; /* 2u */
+    line-height: 20px; /* 1u */
     width: 600px;
     border: none;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
     text-decoration: none;
 }
@@ -66,8 +68,8 @@ body {
     display: none;
 }
 #titlebar .site {
-    font-size: 40px; /* 2u */
-    line-height: 40px; /* 1 */
+    font-size: 20px; /* 1u */
+    line-height: 20px; /* 1 */
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -88,7 +90,7 @@ body {
 /* The Footer */
 #gs-content-layout-footer {
     background: #eeeeee;
-    height: 84px; /* 5.250em = 4.5u - thick*/
+    height: 24px; /* 5.250em = 4.5u - thick*/
     border-top: 6px solid #cccccc;  /* 0.375em */
     position: relative;
     clear: both;
@@ -109,5 +111,8 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+}
+#gs-content-layout-footer ul {
+    margin: 0;
 }
 </tal:block>

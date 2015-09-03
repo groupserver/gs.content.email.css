@@ -8,9 +8,4 @@
         width: 600px !important;
     }
 }
-@media screen and (max-width: 400px) {
-    #titlebar .site {
-        font-size: 30px;
-    }
-}
 </tal:block>
