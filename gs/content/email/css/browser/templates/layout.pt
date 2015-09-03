@@ -58,7 +58,7 @@ td {
 #titlebar-home-link {
     display: block;
     line-height: 20px; /* 1u */
-    width: 600px;
+    max-width: 600px;
     border: none;
     white-space: nowrap;
     text-decoration: none;
