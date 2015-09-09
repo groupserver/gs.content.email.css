@@ -1,11 +1,17 @@
 Changelog
 =========
 
+2.1.3 (2015-09-09)
+------------------
+
+* Reducing the size of the site-name
+
 2.1.2 (2015-07-27)
 ------------------
 
 * Switching to Unicode literals
-* Preventing the site-title from wrapping (setting ``text-overflow``)
+* Preventing the site-title from wrapping (setting
+  ``text-overflow``)
 
 2.1.1 (2015-06-02)
 ------------------
